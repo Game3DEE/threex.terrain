@@ -52,8 +52,7 @@ require([ 'bower_components/threex.minecraft/package.require.js'
 	
 	
 	var material	= new THREE.MeshPhongMaterial({
-		shading		: THREE.FlatShading,
-		// shading		: THREE.SmoothShading,
+		flatShading		: true,
 		vertexColors 	: THREE.VertexColors,
 	});
 	var ground	= new THREE.Mesh( geometry, material );
